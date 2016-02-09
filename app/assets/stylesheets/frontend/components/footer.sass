@@ -1,0 +1,16 @@
+.footer
+  background: asset_url('footer-bg.jpg')
+  padding:
+    top: 60px
+    bottom: 60px
+  margin-top: 60px
+  .message-box
+    +render-to(md, lg)
+      padding:
+        left: 160px
+        right: 160px
+  .message-form-wrapper
+    .left
+      +make-columns(sm6)
+    .right
+      +make-columns(sm6)

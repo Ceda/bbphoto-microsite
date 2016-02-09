@@ -1,2 +1,41 @@
-h1 Root#index
-p Find me in app/views/root/index.html.slim
+.container
+  = inline_svg 'icon.svg', class: 'logo-icon'
+  h2 
+    | Specializujeme se na fotografování hotelů, pokojů, 
+    br
+    | nebo jiných komerčních i nekomerčních prostor.
+
+  h3: strong Naše reference
+  .photo-slider
+    ul#photo-slider
+      - @photos.each_slice(8) do |block|
+        li
+          .wrapper
+            - block.each do |photo|
+              figure 
+                = link_to FlickRaw.url_b(photo), class: 'lightbox', data: { lightbox_gallery: 'asd'}
+                  .photo style="background-image: url(#{FlickRaw.url_n(photo)})"
+
+  .references-slider
+    h3: strong Dlouhodobě spolupracujeme
+    ul#slider
+      li: .reference-slide = image_tag 'logo-7.jpg'
+      li: .reference-slide = image_tag 'logo-8.jpg'
+      li: .reference-slide = image_tag 'logo-6.jpg'
+      li: .reference-slide = image_tag 'logo-5.jpg'
+      li: .reference-slide = image_tag 'logo-4.jpg'
+      li: .reference-slide = image_tag 'logo-3.jpg'
+      li: .reference-slide = image_tag 'logo-2.jpg'
+      li: .reference-slide = image_tag 'logo-1.jpg'
+    
+.footer
+  .container
+    = inline_svg 'icon.svg', class: 'logo-icon'
+
+    h3 
+      | Zaujala Vás naše práce?
+      br
+      strong Kontaktujte nás
+    
+    .message-box = render 'messages/form'
+    .message-state

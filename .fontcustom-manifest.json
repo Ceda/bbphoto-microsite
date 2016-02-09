@@ -1,0 +1,48 @@
+{
+  "checksum": {
+    "previous": "0b782e8c778fa356324da9bbc7e34a8d1409ada9e734edb2d9c8ffaa9ab0ac51",
+    "current": "0b782e8c778fa356324da9bbc7e34a8d1409ada9e734edb2d9c8ffaa9ab0ac51"
+  },
+  "fonts": [
+    "app/assets/fonts/icons.ttf",
+    "app/assets/fonts/icons.svg",
+    "app/assets/fonts/icons.woff",
+    "app/assets/fonts/icons.eot"
+  ],
+  "glyphs": {
+    "zoom": {
+      "codepoint": 61696,
+      "source": "app/assets/icons/zoom.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "icons",
+    "force": true,
+    "input": {
+      "templates": "app/assets/icons",
+      "vectors": "app/assets/icons"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "app/assets/stylesheets/frontend/base",
+      "fonts": "app/assets/fonts",
+      "preview": "app/assets/fonts"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "_font_icons.scss"
+    ]
+  },
+  "templates": [
+    "app/assets/stylesheets/frontend/base/_font_icons.scss"
+  ]
+}

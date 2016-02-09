@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2016-2-9: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20150913 at Tue Feb  9 22:09:21 2016
+ By Tonda Pleskac
+Copyright (c) 2016, Tonda Pleskac
+</metadata>
+<defs>
+<font id="icons" horiz-adv-x="200" >
+  <font-face 
+    font-family="icons"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="6.14355 -59.9043 505.856 443.904"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " 
+ />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" horiz-adv-x="512" 
+d="M305.152 230.912v-16.3838h-75.7764v-75.7764h-16.3838v75.7764h-75.7764v16.3838h75.7764v75.7764h16.3838v-75.7764h75.7764zM401.408 60.9277l104.448 -104.447l-16.3848 -16.3848l-104.447 104.448zM436.224 228.864c0 -118.784 -96.2559 -215.04 -215.04 -215.04
+c-118.783 0 -215.04 96.2559 -215.04 215.04s96.2568 215.04 215.04 215.04c118.784 0 215.04 -96.2559 215.04 -215.04zM413.696 228.864c0 106.496 -86.0166 192.512 -192.513 192.512c-106.495 0 -192.512 -86.0156 -192.512 -192.512s86.0166 -192.513 192.512 -192.513
+c106.496 0 192.513 86.0166 192.513 192.513z" />
+  </font>
+</defs></svg>

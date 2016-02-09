@@ -1,0 +1,34 @@
+.references-slider
+  margin:
+    bottom: 50px
+    top: 50px
+
+#slider
+  text-align:center
+  .reference-slide
+    height: 150px
+    img
+      display: block
+      @extend .img-responsive
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translateY(-50%) translateX(-50%)
+
+
+.bx-wrapper
+  border: 0
+  background: transparent
+  box-shadow: none
+  .bx-prev
+    left: -50px
+  .bx-next
+    right: -50px
+  .bx-controls-direction
+    +render-to(xs)
+      display: none
+
+.bx-pager-link
+  background: $gray-soft !important
+  &.active
+    background: $blue-base !important

@@ -1,0 +1,43 @@
+.photo-slider
+  margin-bottom: 120px
+  .wrapper
+    +make-row(16px)
+  ul
+    @extend .list-unstyled
+
+  figure
+    +make-columns(xs6, md3)
+    padding: 8px
+
+  a
+    &:hover
+      .photo
+        position: relative
+        &::after
+          @extend %fontcustom
+          content: $font-icons-zoom
+          color: white
+          position: absolute
+          z-index: 1000
+          left: 50%
+          top: 50%
+          transform: translateX(-50%) translateY(-50%)
+          font-size: 90px
+
+        &::before
+          content: ''
+          background: rgba($blue-base, .8)
+          width: 100%
+          height: 100%
+          display: block
+          position: absolute
+          left: 0
+          top: 0
+
+  .photo
+    width: 100%
+    height: 180px
+    background:
+      size: cover
+      position: center
+      repeat: no-repeat

@@ -126,6 +126,7 @@ GEM
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
     ffi (1.9.10)
+    flickraw (0.9.8)
     flutie (2.0.0)
     fontcustom (1.3.8)
       json (~> 1.4)
@@ -152,6 +153,10 @@ GEM
     hitimes (1.2.3)
     i18n (0.7.0)
     image_optimizer (1.3.0)
+    inline_svg (0.6.1)
+      activesupport (>= 4.0.4)
+      loofah (>= 2.0)
+      nokogiri (~> 1.6)
     jquery-rails (4.1.0)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -237,9 +242,12 @@ GEM
       sprockets-rails
     rails-assets-bootstrap-sass (3.3.6)
       rails-assets-jquery (>= 1.9.0)
+    rails-assets-bxslider-4 (4.2.5)
+      rails-assets-jquery (>= 1.8.3)
     rails-assets-jquery (2.2.0)
     rails-assets-jquery-ujs (1.2.0)
       rails-assets-jquery (> 1.8)
+    rails-assets-nivo-lightbox (1.2.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.7)
@@ -390,10 +398,12 @@ DEPENDENCIES
   devise
   dotenv-rails
   factory_girl_rails
+  flickraw
   flutie
   fontcustom
   guard-rspec
   image_optimizer (~> 1.3.0)
+  inline_svg
   jquery-rails
   launchy
   mailcatcher
@@ -407,7 +417,9 @@ DEPENDENCIES
   quiet_assets
   rails (~> 4.2.4)
   rails-assets-bootstrap-sass!
+  rails-assets-bxslider-4!
   rails-assets-jquery-ujs!
+  rails-assets-nivo-lightbox!
   rails-i18n-debug!
   rspec-rails (>= 3.1)
   rubocop

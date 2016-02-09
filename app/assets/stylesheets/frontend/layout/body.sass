@@ -1,3 +1,22 @@
+html
+  font-size: $font-size-base
+  +render-to(sm)
+    font-size: $font-size-base - 1.5
+  +render-to(ms)
+    font-size: $font-size-base - 2
+  +render-to(xs)
+    font-size: $font-size-base - 5
+
+*
+  outline: none !important
+
 body
-  font-family: 'Open Sans', sans-serif
+  font-family: 'dobrabook', sans-serif
   +antialiasing
+  padding-top: 5vh
+
+h1,
+h2,
+h3
+  text-align: center
+  font-family: 'dobrabook', sans-serif

@@ -1,0 +1,8 @@
+= simple_form_for @message || Message.new, remote: true do |f|
+  .message-form-wrapper
+    .row
+      .left = f.input :email
+      .right = f.input :name
+    = f.input :message
+    .actions
+      = f.button 'submit', class: 'btn-primary'

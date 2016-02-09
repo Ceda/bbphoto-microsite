@@ -1,26 +1,26 @@
 doctype html
 html
   head
-    = metamagic site: 'berryphoto_microsite',
-      title: [:title, :site],
-      separator: ' – ',
-      og: { image: image_url('blueberry-logo.png') }
-    = meta_robots_tag
-    meta charset='utf-8'
+    = metamagic site: "Berryphoto", title: [:title, :site], separator: " | ",
+                og: { image: image_url('og-image.jpg'),
+                      type: "article",
+                      title: 'article',
+                      description: 'article' }
+
+    meta charset="utf-8"
     meta name='viewport' content='width=device-width, initial-scale=1.0'
-    = render 'favicon'
-    = stylesheet_link_tag :application, media: 'all'
-    = stylesheet_link_tag :print, media: 'print'
+    = meta_robots_tag
+    = render 'favicon', cache: true
+    = stylesheet_link_tag :application, media: :all
+
     = csrf_meta_tags
 
-  body class=body_class
-    /= render 'gtm'
-    = render 'header'
-    = render 'flashes'
-
-    = yield
-
-    = render 'footer'
+  body class=body_class 
+    = render 'gtm', cache: true
+    = render 'menu', cache: true
+    header = render 'carousel'
+    main
+      = render 'flashes'
+      = yield
 
     = javascript_include_tag :application
-    = yield :javascript
