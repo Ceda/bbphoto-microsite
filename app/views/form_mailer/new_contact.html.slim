@@ -1,0 +1,14 @@
+h2 = t '.contact_form'
+div
+  strong => t '.name'   
+  = @message.name
+div
+  strong => t '.email'    
+  = @message.email
+div
+  strong => t '.message'    
+  = @message.message
+div
+  strong => t '.created_at'   
+  = I18n.l @message.created_at
+  

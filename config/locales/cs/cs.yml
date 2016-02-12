@@ -1,6 +1,26 @@
 cs:
+  attributes:
+    email: Váš email
+    message: Text zprávy
+    name: Vaše jméno
+  helpers:
+    submit:
+      message:
+        create: Odeslat zprávu
+  messages:
+    thanks:
+      message_html: "Děkujeme Vám, že chcete vyzkoušet naše služby. <br>Nejpozději do druhého pracovního dne Vás budeme kontaktovat."
+  form_mailer:
+    new_contact:
+      contact_form: Kontaktní formulář
+      created_at: "Vytvořeno:"
+      email: "E-mail:"
+      message: "Zpráva:"
+      name: "Jméno:"
+  layouts:
+    mailer:
+      bb_photo: BerryPhoto.cz
   root:
     index:
-      hello: "Ahoj světe!"
-      meta_title: "Ahoj světe!"
-      meta_description: "Blueberry Rails default project description"
+      title: Jedinečně nafotíme Váš interiér
+      description: Nafotíme interiér, tak aby zachytil a přiblížil jedinečnou atmosféru místa a prezentoval Vaše podnikání (Váš hotel).

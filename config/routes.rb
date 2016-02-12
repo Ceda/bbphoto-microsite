@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   namespace :admin do
-    root to: 'dashboard#show'
+    resources :settings, only: %i(index update) do
+      get :edit, on: :collection, as: :edit
+    end
+    root to: 'settings#index'
   end
 
   root to: 'root#index'

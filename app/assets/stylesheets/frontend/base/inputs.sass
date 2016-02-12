@@ -1,0 +1,58 @@
+%adaptive-inputs
+  position: relative
+  margin-top: 15px
+  label
+    font-weight: 400
+    position: absolute
+    top: 50%
+    left: 10px
+    transform: translateY(-50%)
+    transition: all .5s ease-in-out
+    display: block
+    padding: 2px 4px !important
+    border-radius: $border-radius-base
+  input,
+  textarea
+    &:focus,
+    &.not-empty
+      + label
+        transition-duration: 0.25s
+        transform: translateY(-50%) scale(0.8)
+        transform-origin: left
+        padding: 0 4px !important
+        margin: 0
+        top: 0
+        background: rgba(white, .9)
+
+.form-group
+  div.error
+    color: $red-base
+    font-size: 12px
+    font-weight: 600
+    margin-top: 10px
+  &.has-error
+    margin-bottom: 40px !important
+
+
+div.adaptive_placeholder
+  @extend %adaptive-inputs
+  .form-control
+    border: 0
+    border-bottom: 1px solid transparent
+    box-shadow: none !important
+    transition: border-color .5s ease
+    &:focus
+      border: 0
+      border-bottom: 1px solid darken($gray-light, 25%)
+      box-shadow: none !important
+
+.input-group
+  margin-bottom: 15px
+  .form-group
+    margin-bottom: 0
+
+.help-block
+  position: absolute
+  color: $red-base !important
+  font-weight: 600
+  font-size: 12px

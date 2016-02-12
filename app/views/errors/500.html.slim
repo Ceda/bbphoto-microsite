@@ -1,0 +1,16 @@
+- meta title: 'Error 500',
+       description: 'Server error'
+
+section.block-error-page.e500
+  .container
+    p.errors-img
+      = image_tag 'e500.png'
+      span = t('.name')
+
+    .errors-text
+      h1: span = t('.title')
+
+    .separator.separator--btn
+      .separator__btn-holder
+        = link_to root_path, class: 'btn btn-primary btn-contact'
+          span = t('.back')

@@ -1,0 +1,13 @@
+= simple_form_for [:admin, Setting], method: :put do |f|
+  .overview-box
+    .row
+      .col-md-6
+        h2
+          span.text Úprava nastavení
+      .col-md-6
+        = link_to 'Zpět', admin_settings_path, class: 'pull-right btn btn-success'
+
+  .row
+    .col-md-12
+      = render 'admin/partials/form_errors', f: f
+      = render 'form', f: f, settings: @settings

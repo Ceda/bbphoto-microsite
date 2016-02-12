@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "0b782e8c778fa356324da9bbc7e34a8d1409ada9e734edb2d9c8ffaa9ab0ac51",
-    "current": "0b782e8c778fa356324da9bbc7e34a8d1409ada9e734edb2d9c8ffaa9ab0ac51"
+    "previous": "db1a8f02c1159edd47ebd89a977275c40d6af000ab8a96b3bcfecae6b71af680",
+    "current": "db1a8f02c1159edd47ebd89a977275c40d6af000ab8a96b3bcfecae6b71af680"
   },
   "fonts": [
     "app/assets/fonts/icons.ttf",
@@ -10,6 +10,10 @@
     "app/assets/fonts/icons.eot"
   ],
   "glyphs": {
+    "envelope": {
+      "codepoint": 61697,
+      "source": "app/assets/icons/envelope.svg"
+    },
     "zoom": {
       "codepoint": 61696,
       "source": "app/assets/icons/zoom.svg"

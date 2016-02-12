@@ -1,0 +1,45 @@
+doctype Strict
+html xmlns="http://www.w3.org/1999/xhtml"
+  head
+    meta content=("text/html; charset=utf-8") http-equiv="Content-Type"
+    meta content="width=device-width" name="viewport"
+    = stylesheet_link_tag :mailer
+  body
+    table.body
+      tr
+        td.center align="center" valign="top"
+          center.wrapper-with-bg
+            table.row.header
+              tr
+                td.center.header-with-bg align="center"
+                  center
+                    table.container
+                      tr
+                        td.wrapper.last
+                          table.twelve.columns
+                            tr
+                              td
+                                = image_tag get_image('logo.png')
+            table.container.main
+              tr
+                td.extra-padding
+                  table.row
+                    tr
+                      td.wrapper.last
+                        table.twelve.columns
+                          tr
+                            td
+                              = yield
+                            td.expander
+            table.row.footer
+              tr
+                td.center align="center"
+                  center
+                    table.container
+                      tr
+                        td.wrapper.last
+                          table.twelve.columns
+                            tr
+                              td.twelve.sub-columns.last
+                                strong= t '.bb_photo'
+                              td.expander

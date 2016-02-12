@@ -21,6 +21,9 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.order = 'random'
   config.use_transactional_fixtures = false
+  config.include MailBodyHelpers, type: :mailer
+  config.include Warden::Test::Helpers
+  config.include Devise::TestHelpers, type: :controller
 end
 
 Capybara.javascript_driver = :poltergeist

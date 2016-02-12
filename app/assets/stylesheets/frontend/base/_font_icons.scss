@@ -35,6 +35,7 @@
 
 %fontcustom,
 [data-icon]:before,
+.icon-envelope:before,
 .icon-zoom:before {
   display: inline-block;
   font-family: "icons";
@@ -50,7 +51,9 @@
   font-smoothing: antialiased;
 }
 
+.icon-envelope:before { content: "\f101"; }
 .icon-zoom:before { content: "\f100"; }
 
 
+$font-icons-envelope: "\f101";
 $font-icons-zoom: "\f100";

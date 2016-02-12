@@ -1,3 +1,5 @@
+- meta title: t('.title'), description: t('.desc')
+
 .container
   = inline_svg 'icon.svg', class: 'logo-icon'
   h2 
@@ -30,12 +32,5 @@
     
 .footer
   .container
-    = inline_svg 'icon.svg', class: 'logo-icon'
-
-    h3 
-      | Zaujala Vás naše práce?
-      br
-      strong Kontaktujte nás
-    
-    .message-box = render 'messages/form'
-    .message-state
+    .message-box 
+      = render 'messages/form'

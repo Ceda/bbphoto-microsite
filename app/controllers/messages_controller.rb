@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
     @message = Message.new message_params
 
     if @message.save
+      FormMailer.new_contact(@message).deliver_now
       @message = Message.new
     end
   end

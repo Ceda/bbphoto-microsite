@@ -3,24 +3,24 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'active_link_to'
-gem 'inline_svg'
-gem 'airbrake'
 gem 'autoprefixer-rails'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'dotenv-rails'
+gem 'flickraw', require: true
 gem 'flutie'
+gem 'inline_svg'
 gem 'jquery-rails'
 gem 'metamagic'
 gem 'pg'
+gem 'premailer-rails'
+gem 'rails-settings-cached', '0.4.1'
 gem 'rails', '~> 4.2.4'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
-gem 'flickraw', require: true
-
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-sass'

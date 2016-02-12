@@ -1,0 +1,11 @@
+.row
+  .col-md-12.body
+    h3 Proměnné
+    - settings.each do |setting|
+      = f.input setting.var
+
+.overview-box
+  .overview-box-header.no-filter
+    .overview-box-heading
+    .overview-box-action
+      = f.button :submit, 'Upravit nastavení', class: 'btn btn-primary pull-right'

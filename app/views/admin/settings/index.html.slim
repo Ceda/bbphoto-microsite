@@ -1,0 +1,22 @@
+.overview-box
+  .row
+    .col-md-6
+      h2
+        span.text Nastavení
+    .col-md-6
+      = link_to content_tag(:span, 'Upravit nastavení'), edit_admin_settings_path,
+        class: 'btn btn-primary pull-right'
+
+  .overview-box-content
+    .row
+      .col-md-12
+        table.users.table.table-overview
+          thead
+            th Název
+            th Hodnota
+          tbody
+            - if @settings.any?
+              = render @settings
+            - else
+              tr
+                td colspan=4 Zatím žádné nastavení.

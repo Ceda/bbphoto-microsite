@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :message do
-    email "MyString"
-    name "MyString"
-    message "MyText"
+    name 'John Doe'
+    email 'john.doe@big-company.com'
+    message "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   end
 end
