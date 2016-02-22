@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "db1a8f02c1159edd47ebd89a977275c40d6af000ab8a96b3bcfecae6b71af680",
-    "current": "db1a8f02c1159edd47ebd89a977275c40d6af000ab8a96b3bcfecae6b71af680"
+    "previous": "41e07befa12f5e50c027dabe91fdabe183aa536b552a2ef32f53184436754b7f",
+    "current": "41e07befa12f5e50c027dabe91fdabe183aa536b552a2ef32f53184436754b7f"
   },
   "fonts": [
     "app/assets/fonts/icons.ttf",
@@ -13,6 +13,18 @@
     "envelope": {
       "codepoint": 61697,
       "source": "app/assets/icons/envelope.svg"
+    },
+    "facebook": {
+      "codepoint": 61698,
+      "source": "app/assets/icons/facebook.svg"
+    },
+    "left": {
+      "codepoint": 61699,
+      "source": "app/assets/icons/left.svg"
+    },
+    "right": {
+      "codepoint": 61700,
+      "source": "app/assets/icons/right.svg"
     },
     "zoom": {
       "codepoint": 61696,

@@ -36,6 +36,9 @@
 %fontcustom,
 [data-icon]:before,
 .icon-envelope:before,
+.icon-facebook:before,
+.icon-left:before,
+.icon-right:before,
 .icon-zoom:before {
   display: inline-block;
   font-family: "icons";
@@ -52,8 +55,14 @@
 }
 
 .icon-envelope:before { content: "\f101"; }
+.icon-facebook:before { content: "\f102"; }
+.icon-left:before { content: "\f103"; }
+.icon-right:before { content: "\f104"; }
 .icon-zoom:before { content: "\f100"; }
 
 
 $font-icons-envelope: "\f101";
+$font-icons-facebook: "\f102";
+$font-icons-left: "\f103";
+$font-icons-right: "\f104";
 $font-icons-zoom: "\f100";

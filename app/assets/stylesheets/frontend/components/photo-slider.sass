@@ -1,7 +1,13 @@
 .photo-slider
   margin-bottom: 120px
+  +render-to(sm, md, lg)
+    padding:
+      left: 40px
+      right: 40px
+
   .wrapper
     +make-row(16px)
+
   ul
     @extend .list-unstyled
 

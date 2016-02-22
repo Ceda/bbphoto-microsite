@@ -18,7 +18,17 @@ html
   body class=body_class 
     = render 'gtm', cache: true
     = render 'menu', cache: true
-    header = render 'carousel'
+    header 
+      = link_to 'https://www.facebook.com/BerryPhoto.cz', class: :facebook
+        i.icon-facebook
+      .scoll-down
+        span Scrolujte
+        svg.arrows
+          path.a1 d=("M0 0 L30 32 L60 0") 
+          path.a2 d=("M0 20 L30 52 L60 20") 
+          path.a3 d=("M0 40 L30 72 L60 40") 
+
+      = render 'carousel'
     main
       = render 'flashes'
       = yield

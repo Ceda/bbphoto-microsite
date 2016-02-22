@@ -8,7 +8,9 @@ if $('#slider').length
     speed: 20000
 
 if $('#photo-slider').length
-  $('#photo-slider').bxSlider()
+  $('#photo-slider').bxSlider
+    nextText: '<i class="icon-right"></i>'
+    prevText: '<i class="icon-left"></i>'
 
 $('#main-slider').bxSlider
   mode: 'fade'

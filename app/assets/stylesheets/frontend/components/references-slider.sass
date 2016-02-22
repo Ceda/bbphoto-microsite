@@ -20,10 +20,26 @@
   border: 0
   background: transparent
   box-shadow: none
+
+  .bx-prev,
+  .bx-next
+    background: transparent
+    text-indent: 0 !important
+    margin-top: -30px !important
+    width: 40px !important
+    height: 49px !important
+    i
+      color: lighten($gray-base, 50%)
+      font-size: rem(40)
+    &:hover
+      i
+        color: lighten($gray-base, 20%)
+
   .bx-prev
     left: -50px
   .bx-next
     right: -50px
+
   .bx-controls-direction
     +render-to(xs, ms)
       display: none

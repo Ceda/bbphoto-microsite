@@ -1,2 +1,67 @@
 header
   display: block
+
+  .facebook
+    color: white
+    background: $blue-base
+    display: block
+    width: 50px
+    height: 50px
+    position: absolute
+    left: 20px
+    bottom: 20px
+    z-index: 1001
+    text-align: center
+    font-size: 30px
+    border-radius: 50%
+    transition: all .2s linear
+    +render-to(xs)
+      bottom: 10px
+      left: 50%
+      transform: translateX(-50%)
+
+    &:hover
+      background-color: darken($blue-base, 5%)
+      transform: scale(1.2)
+
+  .scoll-down
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    transition: all .2s linear
+    z-index: 100
+    color: white
+    +render-to(xs)
+      display: none
+
+    span
+      display: block
+      font-weight: 600
+
+    svg.arrows
+      height: 72px
+      z-index: 100
+      width: 60px
+
+      path
+        fill: transparent
+        stroke: white
+        stroke-width: 2px
+        animation: arrow 2s infinite
+        &.a1
+          animation-delay: -1s
+        &.a2
+          animation-delay: -0.5s
+        &.a3
+          animation-delay: 0s
+
+    @keyframes arrow
+      0%
+        opacity: 0
+      40%
+        opacity: 1
+      80%
+        opacity: 0
+      100%
+        opacity: 0
