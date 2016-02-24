@@ -1,0 +1,28 @@
+.errors
+  &-img
+    margin: 0
+    font-size: rem(80)
+    color: $blue-base
+    img
+      margin: 0 auto
+      margin-top: rem(40)
+      display: block
+      max-width: 100%
+    span
+      text-align: center
+      display: block
+      font-weight: 600
+
+  &-text
+    h1
+      margin: rem(12) 0 rem(20)
+      font-size: rem(40)
+      +render-to(ms)
+        font-size: rem(40)
+      +render-to(xs)
+        font-size: rem(30)
+    p
+      text-align: center
+      margin: 0 auto rem(29)
+    .btn-blue
+      border-radius: 25px

@@ -1,17 +1,15 @@
 - meta title: 'Error 404',
        description: 'Page not found'
 
-section.block-error-page.e404
+section.e404
   .container
     p.errors-img
       = image_tag 'e404.png'
       span = t('.name')
 
     .errors-text
-      h1: span = t('.title')
+      h1 = t('.title')
       p = t('.desc_html')
 
-    .separator.separator--btn
-      .separator__btn-holder
-        = link_to root_path, class: 'btn btn-primary btn-contact'
-          span = t('.back')
+      = link_to root_path, class: 'btn-blue centered'
+        span = t('.back')

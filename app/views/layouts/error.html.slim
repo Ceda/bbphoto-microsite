@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    = metamagic site: "Berryphoto", title: [:title, :site], separator: " | ",
+                og: { image: image_url('og-image.jpg'),
+                      type: "article",
+                      title: 'article',
+                      description: 'article' }
+
+    meta charset="utf-8"
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+    = meta_robots_tag
+    = render 'favicon', cache: true
+    = stylesheet_link_tag :application, media: :all
+
+    = csrf_meta_tags
+
+  body class=body_class 
+    = render 'gtm', cache: true
+    = render 'menu', cache: true
+    main
+      = render 'flashes'
+      = yield
+
+    = javascript_include_tag :application

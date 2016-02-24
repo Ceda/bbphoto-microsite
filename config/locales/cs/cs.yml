@@ -24,3 +24,14 @@ cs:
     index:
       title: Jedinečně nafotíme Váš interiér
       desc: "Nafotíme interiér, tak aby zachytil a přiblížil jedinečnou atmosféru místa a prezentoval Vaše podnikání (Váš hotel)."
+  errors:
+    "404":
+      back: "Vrátit se zpět"
+      desc_html: "Zkuste prosím zkontrolovat, zda jste neudělali chybu v&nbsp;adrese stránky. Máte-li adresu správně, znamená to, že stránka byla z&nbsp;našeho serveru odstraněna. Pokud byl pro vás její obsah důležitý, <a href='mailto:petr@berryphoto.cz'>obraťte se na&nbsp;nás</a> a&nbsp;my určitě najdeme způsob, jak vám pomoci."
+      name: "Chyba 404"
+      title: "Je nám líto, ale zrovna tuhle stránku tady nemáme"
+    "500":
+      back: "Vrátit se zpět"
+      name: "Chyba 500"
+      title: "Ups, vypadá to, že něco pokazilo! :("
+      desc_html: "Tyto chyby automaticky sledujeme, ale pokud problém přetrvává, neváhejte <a href='mailto:petr@berryphoto.cz'>nás kontaktovat</a>. <br> Do té doby, zkuste stránku aktualizovat."
