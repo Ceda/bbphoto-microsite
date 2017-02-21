@@ -85,6 +85,5 @@ Rails.application.configure do
     domain:    "#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
   }
 
-
-  config.action_mailer.default_url_options = { host: 'berryphoto_microsite.com' }
+  config.action_mailer.default_url_options = { host: 'hotels.berryphoto.cz' }
 end

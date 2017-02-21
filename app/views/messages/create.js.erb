@@ -1,13 +1,14 @@
 <% if @message.errors.any? %>
-  $('.message-box').html("<%= escape_javascript render 'form' %>").fadeIn(300);
-  $('.message-state').html("<%= escape_javascript render 'state' %>").fadeIn(300);
+  $('.message-box').html("<%= j render 'form' %>").fadeIn(300);
+  $('.message-state').html("<%= j render 'state' %>").fadeIn(300);
+  initAdaptivePlaceholders()
+  decorateAdaptiveElements()
 <% else %>
   $('.message-box .message-form-wrapper').fadeOut(200, function() {
-    $(this).html("<%= escape_javascript render partial: 'thanks' %>").fadeIn(200).delay(8000).fadeOut(200, function() {
-      $('.message-box').html("<%= escape_javascript render partial: 'form' %>").fadeIn(200);
+    $(this).html("<%= j render partial: 'thanks' %>").fadeIn(200).delay(8000).fadeOut(200, function() {
+      $('.message-box').html("<%= j render partial: 'form' %>").fadeIn(200);
       initAdaptivePlaceholders()
       decorateAdaptiveElements()
     });
   });
-
 <% end %>
