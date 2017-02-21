@@ -79,10 +79,12 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     port:      587,
-    address:   'smtp.mandrillapp.com',
-    user_name: ENV['MANDRILL_USERNAME'],
-    password:  ENV['MANDRILL_PASSWORD']
+    address:   'smtp.sendgrid.net',
+    user_name: ENV['SENDGRID_USERNAME'],
+    password:  ENV['SENDGRID_PASSWORD'],
+    domain:    "#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
   }
+
 
   config.action_mailer.default_url_options = { host: 'berryphoto_microsite.com' }
 end
